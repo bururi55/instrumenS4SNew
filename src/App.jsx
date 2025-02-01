@@ -1,13 +1,22 @@
-import ReactLogo from './assets/react.svg?react';
-import { MyComponent } from './Mycomponent';
-import styles from './index.module.css';
+import React from 'react';
+import Snowflakes from './components/Snowflakes';
+import Garland from './components/Garland';
+import NavigationButtons from './components/NavigationButtons';
+import MarqueeContactVersion from './components/MarqueeContactVersion';
+import CopyButtons from './components/CopyButtons';
+import Scripts from './components/Scripts';
 
-export const App = () => {
+const App = () => {
 	return (
-		<div className={styles.app}>
-			<h1 className={styles.appHeader}>Hello World</h1>
-			<ReactLogo />
-			<MyComponent />
+		<div>
+			<Snowflakes />
+			<Garland />
+			<NavigationButtons />
+			<MarqueeContactVersion />
+			<CopyButtons />
+			<Scripts />
 		</div>
 	);
 };
+
+export default App;
